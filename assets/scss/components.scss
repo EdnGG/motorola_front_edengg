@@ -1,0 +1,245 @@
+/*⊱⊱═══════════════════════════════════════════════════════⊰⊰*/
+/*⊱⊱═══════════════════════ INPUTS ════════════════════════⊰⊰*/
+/*⊱⊱═══════════════════════════════════════════════════════⊰⊰*/
+.input-thm-light, .input-thm-dark, .input-line-thm-light, .input-line-thm-dark {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+    &:focus, &:active {
+        outline: 0 none;
+    }
+}
+
+
+/*⊱⊱═════════════════════ input normal ═════════════════════⊰⊰*/ 
+.input-thm-light, .input-thm-dark {
+    font-family: 'Montserrat-Regular';
+    border-radius: 8px; 
+    padding: 9px 20px;
+    // min-width: 300px;
+
+    &:focus, &:active {
+        outline: 0 none;
+        border-color: $primary;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $primary;
+    }
+}
+.input-thm-light {
+    border: 1px solid $light !important;
+    background-color: $light !important;
+    color: $main_text !important;
+}
+.input-thm-dark {
+    border: 1px solid $secondary !important;
+    background-color: $secondary !important;
+    color: $main_white;
+
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: #FFFFFFAA;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #FFFFFFAA;
+        opacity: 1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #FFFFFFAA;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #FFFFFFAA;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #FFFFFFAA;
+    }
+    &::placeholder { /* Most modern browsers support this now. */
+        color: #FFFFFFAA;
+    }
+}
+
+/*⊱⊱═════════════════ input focus color ═════════════════⊰⊰*/
+.input-primary {
+    &:focus, &:active {
+        border-color: $primary !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $primary !important;
+    }
+} 
+.input-secondary {
+    &:focus, &:active {
+        border-color: $secondary !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $secondary !important;
+    }
+} 
+.input-success {
+    &:focus, &:active {
+        border-color: $success !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $success !important;
+    }
+} 
+.input-warning {
+    &:focus, &:active {
+        border-color: $warning !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $warning !important;
+    }
+}
+.input-danger {
+    &:focus, &:active {
+        border-color: $danger !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $danger !important;
+    }
+}
+.input-info {
+    &:focus, &:active {
+        border-color: $info !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $info !important;
+    }
+}
+.input-light {
+    &:focus, &:active {
+        border-color: $light !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $light !important;
+    }
+}
+.input-dark {
+    &:focus, &:active {
+        border-color: $dark !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 10px $dark !important;
+    }
+}
+// box-shadow: 31px 18px 37px rgb(0 0 0) inset, 0px 0px 10px #6cb561;
+
+
+/*⊱⊱══════════════════════ input line ══════════════════════⊰⊰*/
+.input-line-thm-light, .input-line-thm-dark {
+    font-family: 'Montserrat-Regular';
+    background-color: transparent;
+    padding: 6px 10px;
+    border: 0px;
+
+    &:focus, &:active {
+        border-bottom: 2px solid $primary;
+    }
+}
+.input-line-thm-light {
+    border-bottom: 2px solid $main_white;
+    color: $main_white;
+
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: #FFFFFFAA;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #FFFFFFAA;
+        opacity: 1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #FFFFFFAA;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #FFFFFFAA;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #FFFFFFAA;
+    }
+    &::placeholder { /* Most modern browsers support this now. */
+        color: #FFFFFFAA;
+    }
+}
+.input-line-thm-dark {
+    border-bottom: 2px solid $dark;
+    color: $main_text;
+}
+
+/*⊱⊱═══════════════ input line focus color ═══════════════⊰⊰*/
+.input-line-primary {
+    &:focus, &:active {
+        border-bottom: 2px solid $primary;
+    }
+}
+.input-line-secondary {
+    &:focus, &:active {
+        border-bottom: 2px solid $secondary;
+    }
+}
+.input-line-success {
+    &:focus, &:active {
+        border-bottom: 2px solid $success;
+    }
+}
+.input-line-warning {
+    &:focus, &:active {
+        border-bottom: 2px solid $warning;
+    }
+}
+.input-line-danger {
+    &:focus, &:active {
+        border-bottom: 2px solid $danger;
+    }
+}
+.input-line-info {
+    &:focus, &:active {
+        border-bottom: 2px solid $info;
+    }
+}
+.input-line-light {
+    &:focus, &:active {
+        border-bottom: 2px solid $light;
+    }
+}
+.input-line-dark {
+    &:focus, &:active {
+        border-bottom: 2px solid $dark;
+    }
+}
+
+
+/*⊱⊱═══════════════════════════════════════════════════════⊰⊰*/
+/*⊱⊱═════════════════════════ BTN ═════════════════════════⊰⊰*/
+/*⊱⊱═══════════════════════════════════════════════════════⊰⊰*/
+
+.btn {
+    padding: .5em 1.5em;
+    font-family: 'Montserrat-Bold';
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-white-mo:focus, .btn-white-mo.focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px #00152b40;
+}
+
+.btn-pill {
+    border-radius: 24px;
+}
+
+.btn-xs {
+    font-size: 0.6rem;
+    line-height: 1;
+}
+
+.btn-link:hover, .btn-link:active, .btn-link:focus, .btn-link:visited {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-info-mo {
+    color: #212529;
+    background-color: #84C3EE;
+    border-color: #84C3EE;
+    border-radius: 8px;
+}
+.btn-info-mo:hover {
+    box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+.btn-info-mo:focus, .btn-info:active {
+    background: #92C1E9;
+    box-shadow: inset 0px 4px 4px rgba(22, 92, 125, 0.23);
+}
+.btn-info-mo:disabled, .btn-white-mo {
+    color: #B9B9C3;
+    background-color: white;
+    border: 1px solid #B9B9C3;
+    border-radius: 8px;
+}

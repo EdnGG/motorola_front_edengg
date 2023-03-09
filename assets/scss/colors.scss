@@ -1,0 +1,85 @@
+/*⊱⊱═══════════════════ Base grayscale ════════════════════⊰⊰*/
+/*⊱⊱═════════════════ colors definitions ══════════════════⊰⊰*/
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+
+/*⊱⊱═════════════════════ Base colors ═════════════════════⊰⊰*/
+/*⊱⊱═════════════════════ definitions ═════════════════════⊰⊰*/
+
+$main_blue: #00152B !default;                               // Original color: #007BFF
+$main_gray: #6C757D !default;                               // Original color: #6C757D
+$main_green: #28A745 !default;                              // Original color: #28A745
+$main_yellow: #FFC107 !default;                             // Original color: #FFC107
+$main_orange: #FD7E14 !default;                             // Original color: #FD7E14
+$main_red: #FF443F !default;                                // Original color: #DC3545
+$main_purple: #6F42C1 !default;                             // Original color: #6F42C1
+$main_indigo: #6610F2 !default;                             // Original color: #6610F2
+$main_pink: #FFBA8F !default;                               // Original color: #E83E8C
+$main_teal: #20C997 !default;                               // Original color: #20C997
+$main_cyan: #84C3EE !default;                               // Original color: #17A2B8
+$main_semigray: #E1E2E4 !default;                           // Original color: #E9ECEF
+$main_black: #212121 !default;                              // Original color: #111111
+$main_white: #FFFFFF !default;                              // Original color: #FFFFFF
+$main_transparent: #00000000 !default;                      // Original color: #00000000
+
+
+/*⊱⊱═════════════════════ Text Colors ═════════════════════⊰⊰*/
+
+$main_text: #444444 !default;
+
+
+/*⊱⊱═════════════════════ Theme color ═════════════════════⊰⊰*/
+/*⊱⊱═════════════════ default definitions ═════════════════⊰⊰*/
+
+$primary: $main_blue !default;
+$secondary: $main_gray !default;
+$success: $main_green !default;
+$warning: $main_pink !default;
+$danger: $main_red !default;
+$info: $main_cyan !default;
+$light: $main_semigray !default;
+$dark: $main_black !default;
+
+
+/*⊱⊱══════════════════ Background Colors ══════════════════⊰⊰*/
+
+.border-primary {
+    border: 1px solid $primary;
+}
+.border-secondary {
+    border: 1px solid $secondary;
+}
+.border-success {
+    border: 1px solid $success;
+}
+.border-warning {
+    border: 1px solid $warning;
+}
+.border-danger {
+    border: 1px solid $danger;
+}
+.border-info {
+    border: 1px solid $info;
+}
+.border-light {
+    border: 1px solid $light;
+}
+.border-dark {
+    border: 1px solid $dark;
+}
+.border-transparent {
+    border: 1px solid $main_transparent;
+}
+
+.border-top-danger {
+    border-top: 1px solid $danger;
+}
+
