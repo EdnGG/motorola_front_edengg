@@ -10,13 +10,14 @@ const PRIMARY_HOSTS = `localhost:*`;
 export default {
     // Target: https://go.nuxtjs.dev/config-target
     // target: 'static',
-    ssr: true,
+    // ssr: true,
     // target: "server",
-    mode: "universal",
-    generate: {
-        dir: "public",
-    },
-    target: "serverless",
+
+    // mode: "universal",
+    // generate: {
+    //     dir: "public",
+    // },
+    // target: "serverless",
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
