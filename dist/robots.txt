@@ -1,0 +1,5 @@
+Allow
+Crawl-delay: 120
+Sitemap: https://motorolanews.com/sitemap.xml
+User-agent: *
+Allow :/
