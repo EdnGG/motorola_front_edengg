@@ -78,7 +78,8 @@ export default {
         { src: "~/plugins/i18n.js" },
 
         // Conexion a la base de datos mongoDB
-        { src: "~/plugins/db.js", mode: "server" },
+
+        // { src: "~/plugins/db.js", mode: "server" },
 
         //vue-notification
         { src: "~/plugins/vue-notification/ssr", ssr: true },
